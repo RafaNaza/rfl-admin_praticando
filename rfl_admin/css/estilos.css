@@ -1,0 +1,200 @@
+/* 
+By Rafa Nazario
+data : 09/10/2014
+*/
+
+*{
+	margin :0;
+	padding :0;
+	width : 100%;
+	
+	font-family:Tahoma;
+	color:#fff;
+	font-variant:small-caps;
+	font-size:18px;	
+}
+body{
+	background-image:url('../imagens/bg_body.jpg');
+	position:absolute;
+	top:0;
+	left:0;
+	height:100%;
+	overflow:hidden;
+}
+a{
+	text-decoration:none;
+}
+a:hover{
+	text-decoration:underline;
+}
+header{
+	width : 98.7%;
+	padding:1.3% 0 1.3% 1.3%;
+	background-color: rgba(8,96,164,0.5);	
+	position:absolute;
+	top:0;
+	left:0;
+}
+article{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	min-width:30%;
+	padding:30px 0 0 0;
+	background-color: rgba(223,221,56,0.5);	
+	border:0px solid #999;
+	
+}
+.conteudo{
+	background:rgb(30,50,70);
+	padding:30px 30px 0 30px;
+	width:100%;
+	height:100%;
+}
+.combo_botoes_view{
+	height:30px;
+	width:auto;
+	position:absolute;
+	top:0;
+	right:0;
+	z-index:2;
+	border:0px solid #999;
+	background-color:rgba(4,4,4,0.5);
+}
+.combo_botoes_view div{
+	display:inline-block;
+	width:auto;
+	font-size:14px;
+	line-height:30px;
+	padding:0 10px 0 10px;
+	margin:0;
+	border:0px solid;
+	cursor:pointer;
+}
+.combo_botoes_view div:hover{
+	color:#FFF;
+	background-color:rgba(4,4,4,1);
+}
+footer{
+	width : 100%;
+	/*padding-right:0;
+	padding-left:1.3%;
+	line-height:50px;*/
+	background-color: rgba(8,96,164,1);	
+	position:absolute;
+	bottom:0;
+	left:0;
+	/*padding-bottom:10px;
+	padding-top:7px;*/
+	padding-top:0;
+	padding-bottom:0;
+	line-height:50px;
+	z-index:10;
+}
+.barra_de_tarefas{
+	width:auto;
+	display:inline-block;
+	border:0px solid;
+}
+.barra_icone{
+	width:auto;
+	display:inline-block;
+	padding:0 5px 0 5px;
+	line-height:50px;
+	background-color:rgba(223,221,56,0.6);
+	cursor:default;
+	margin-right:2px;
+}
+.barra_icone.active{
+	background-color:rgba(223,221,56,1);
+}
+.barra_icone:hover{
+	background-color:rgba(223,221,56,1);
+}
+.botao_menu{
+	position : absolute;
+	/*top:30%;*/
+	top:0;
+	left:0;
+	z-index:9;
+	width:26px;
+	/*height:80px;*/
+	height:100%;
+	line-height:35px;
+	/*padding:0 1% 0 1%;*/
+	cursor:pointer;
+	/*background:#ddd;*/
+	/*background-color:rgb(9,100,120);
+	border:1px solid #999;*/
+	background-image:url(../imagens/bg_button.jpg);
+	/*background-position:center;
+	background-repeat:no-repeat;*/
+	border:1px solid #444;
+	border-radius: 0 5px 5px 0;
+	
+	opacity:0.4;
+	filter:alpha(opacity=40);
+	display:none;
+}
+.botao_menu:hover{
+	/*background-image:url(../imagens/pr_logo_min_hover.png);*/
+	opacity:1;
+	filter:alpha(opacity=100);
+}
+.menu{
+	background-color:rgba(50,50,50,1);
+	position:absolute;
+	bottom:0;
+	/*padding:2% 0 2% 0;*/
+	/*margin-bottom: 50px;*/
+	height:100%;
+	width:auto;
+	z-index:9;
+}
+.menu span{
+	display:block;
+	width:auto;
+	padding-left:5px;
+	padding-right:5px;
+	/*overflow:hidden;
+	overflow-y:scroll;*/
+}
+.menu span a{
+	display:inline-block;
+	padding-top:5px;
+	padding-bottom:5px;
+	padding-right:7px;
+	padding-left:7px;
+	float:left;
+	clear:both;
+}
+.menu span a:hover{
+	color:#DDD;
+}
+.menu.hide{
+	padding-left:0;
+	left:-100%;
+}
+.menu.show{
+	left:0;
+	/*padding-left:2%;*/
+}
+.zIndexFront{
+	z-index:8;
+}
+.zIndexBack{
+	z-index:7;
+}
+.erro{
+	display:block;
+	padding:8px 6px;
+	background:#dc8181;
+	position:absolute;
+	top:50px;
+	left:0;
+	z-index:1;
+	color:#FFF;
+	cursor:not-allowed;
+}
